@@ -601,7 +601,7 @@ margin-right: 0;
 }
 
 .portfolio-card {
-    flex-basis: calc((100% - 90px) / 3);
+    
     margin-right: 30px;
     margin-bottom: 30px;
 }
