@@ -242,8 +242,6 @@ button {
 
 .footer-social {
     margin-left: 70px;
-    width: 206px;
-    height: 80px;
 }
 
 .footer-social-text {
@@ -265,8 +263,6 @@ button {
     margin-right: 10px;
     width: 44px;
     height: 44px;
-    justify-content: center;
-    align-items: center;
     border-radius: 50%;
     background: var(--soc-link-icon-bg-color);
 }
@@ -488,6 +484,7 @@ margin-right: 0;
 
 .team-icon {
     display: flex;
+    justify-content: center;
     list-style: none;
    }
 
@@ -502,6 +499,9 @@ margin-right: 0;
     margin-right: 0;
 }
 
+.team-soc-icon {
+    fill: currentColor;
+}
 .team-icon-link {
     display: flex;
     width: 100%;
@@ -509,14 +509,13 @@ margin-right: 0;
     border-radius: 50%;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
-    fill: var(--border-clients-color);
+    color: var(--border-clients-color);
 }
 
 .team-icon-link:hover,
 .team-icon-link:focus {
     background-color:var(--accent-color);
-    fill:var(--white-text-color);
+    color:var(--white-text-color);
 }
 
 .clients-title {
@@ -537,19 +536,13 @@ margin-right: 0;
     margin-right: 30px;
     width: 170px;
     height: 92px;
-    border: 1px solid var(--border-clients-color);
-    box-sizing: border-box;
-    border-radius: 4px;
 }
 
 .clients-item:last-child {
     margin-right: 0;
 }
 
-.clients-item:hover,
-.clients-item:focus {
-    border: 1px solid var(--accent-color);
-}
+
 
 .clients-link {
     display: flex;
@@ -557,17 +550,19 @@ margin-right: 0;
     height: 100%;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
-    fill: var(--border-clients-color);
+    color: var(--border-clients-color);
+    border: 1px solid var(--border-clients-color);
+    border-radius: 4px;
 }
 
 .clients-link:hover,
 .clients-link:focus {
-    fill: var(--accent-color);
+    color: var(--accent-color);
+    border-color: var(--accent-color);
 }
 
 .clients-icon {
-    background: #fff;
+    fill: currentColor;
 }
 
 /* -------------------------------портфолио------------------------------- */
@@ -625,13 +620,12 @@ margin-right: 0;
     text-decoration: none;
 }
 
-.portfolio-card:hover,
+.portfolio-card-link:hover,
 .portfolio-card-link:focus {
     box-shadow: 
     0px 1px 1px rgba(0, 0, 0, 0.12),
     0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-    cursor: pointer;
 }
 
 .card-item {
